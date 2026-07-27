@@ -4,6 +4,9 @@ FortiOS graduation project implementing a small-company, two-site network secure
  
 > **Status:** Core (mandatory) requirements implemented and validated. SD-WAN and High Availability are documented as bonus work, not yet implemented.
 
+![Actual EVE-NG Topology](topology/Topology.png)
+*Figure 1: Actual implemented topology showing HQ, Branch, and Linux-ISP.*
+
 ---
  
 ## Table of Contents
