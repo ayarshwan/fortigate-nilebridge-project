@@ -3,6 +3,9 @@
 FortiOS graduation project implementing a small-company, two-site network secured with FortiGate: routed internet access with NAT, a route-based site-to-site IPsec VPN, local captive-portal authentication, static web filtering, and application control — built and validated in EVE-NG.
  
 > **Status:** Core (mandatory) requirements implemented and validated. SD-WAN and High Availability are documented as bonus work, not yet implemented.
+
+![Uploading Screenshot 2026-07-25 234801.png…]()
+
  
 ---
  
