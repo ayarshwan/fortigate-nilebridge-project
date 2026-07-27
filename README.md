@@ -6,7 +6,6 @@ FortiOS graduation project implementing a small-company, two-site network secure
 
 ![Uploading Screenshot 2026-07-25 234801.png…]()
 
- 
 ---
  
 ## Table of Contents
