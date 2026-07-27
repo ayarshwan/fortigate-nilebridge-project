@@ -4,8 +4,6 @@ FortiOS graduation project implementing a small-company, two-site network secure
  
 > **Status:** Core (mandatory) requirements implemented and validated. SD-WAN and High Availability are documented as bonus work, not yet implemented.
 
-![Uploading Screenshot 2026-07-25 234801.png…]()
-
 ---
  
 ## Table of Contents
