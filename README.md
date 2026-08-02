@@ -14,7 +14,6 @@ fortigate-graduation-project/
 ├── configs/
 │   ├── HQ-NGFW-1-sanitized.conf
 │   ├── BR1-FGT-sanitized.conf
-├── configurations-shots/
 └── main-project-eve-file/
 ```
 
