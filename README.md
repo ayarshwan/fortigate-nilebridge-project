@@ -9,26 +9,13 @@ FortiOS graduation project implementing a small-company, two-site network secure
 ```
 fortigate-graduation-project/
 ├── README.md
-├── docs/
-│   └── NileBridge_FortiGate_Final_Report.pdf
 ├── topology/
 │   ├── Topology.png
-│   └── addressing-table.md
 ├── configs/
 │   ├── HQ-NGFW-1-sanitized.conf
 │   ├── BR1-FGT-sanitized.conf
-│   └── linux-isp-persistent.sh
-└── evidence/
-    ├── 01-interfaces.png
-    ├── 02-firewall-policies.png
-    ├── 03-ipsec-up.png
-    ├── 04-authentication.png
-    ├── 05-web-filter.png
-    ├── 06-application-control.png
-    ├── 07-connectivity-tests.png
-    ├── 08-sdwan-members-and-sla.png
-    ├── 09-sdwan-wan1-primary.png
-    └── 10-sdwan-failover.png
+├── configurations-shots/
+└── main-project-eve-file/
 ```
 
 ## Table of Contents
