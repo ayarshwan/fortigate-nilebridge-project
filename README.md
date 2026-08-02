@@ -3,10 +3,33 @@
 FortiOS graduation project implementing a small-company, two-site network secured with FortiGate: routed internet access with NAT, a route-based site-to-site IPsec VPN, local captive-portal authentication, static web filtering, and application control — built and validated in EVE-NG.
 
 > **Status:** Core (mandatory) requirements implemented and validated. HQ SD-WAN (dual-WAN Internet failover) is implemented and validated as a bonus. The Branch remains on its original WAN1 design for a simpler, resource-efficient scope.
-> 
-![Actual EVE-NG Topology](topology/Topology.png)
-*Figure 1: Actual implemented topology showing HQ, Branch, and Linux-ISP.*
----
+
+## Repository Structure
+
+```
+fortigate-graduation-project/
+├── README.md
+├── docs/
+│   └── NileBridge_FortiGate_Final_Report.pdf
+├── topology/
+│   ├── Topology.png
+│   └── addressing-table.md
+├── configs/
+│   ├── HQ-NGFW-1-sanitized.conf
+│   ├── BR1-FGT-sanitized.conf
+│   └── linux-isp-persistent.sh
+└── evidence/
+    ├── 01-interfaces.png
+    ├── 02-firewall-policies.png
+    ├── 03-ipsec-up.png
+    ├── 04-authentication.png
+    ├── 05-web-filter.png
+    ├── 06-application-control.png
+    ├── 07-connectivity-tests.png
+    ├── 08-sdwan-members-and-sla.png
+    ├── 09-sdwan-wan1-primary.png
+    └── 10-sdwan-failover.png
+```
 
 ## Table of Contents
 
@@ -600,35 +623,6 @@ Permits and logs normal/unknown applications while blocking selected P2P signatu
 | HQ-only SD-WAN scope | Configuring SD-WAN at both sites would add time/complexity without changing the learning objective | Implemented and tested SD-WAN at HQ only; Branch remains on WAN1 |
 | Management session during WAN1 failure | The management path (HTTPS/8443) used WAN1, so the session dropped when `ens5` was disabled | Added a temporary management path through HQ WAN2 for failover testing |
 | VPN during HQ WAN1 outage | The IPsec tunnel is bound to HQ `port2` | Internet fails over to WAN2, but the VPN may drop until WAN1 is restored |
-
----
-
-## Repository Structure
-
-```
-fortigate-graduation-project/
-├── README.md
-├── docs/
-│   └── NileBridge_FortiGate_Final_Report.pdf
-├── topology/
-│   ├── Topology.png
-│   └── addressing-table.md
-├── configs/
-│   ├── HQ-NGFW-1-sanitized.conf
-│   ├── BR1-FGT-sanitized.conf
-│   └── linux-isp-persistent.sh
-└── evidence/
-    ├── 01-interfaces.png
-    ├── 02-firewall-policies.png
-    ├── 03-ipsec-up.png
-    ├── 04-authentication.png
-    ├── 05-web-filter.png
-    ├── 06-application-control.png
-    ├── 07-connectivity-tests.png
-    ├── 08-sdwan-members-and-sla.png
-    ├── 09-sdwan-wan1-primary.png
-    └── 10-sdwan-failover.png
-```
 
 ---
 
